@@ -1,46 +1,47 @@
 ```html
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <title>Web Page</title>
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Web Page</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <!-- Header -->
   <header>
-    <h1>Website Title</h1>
+    <h1>My Website</h1>
   </header>
-
-  <!-- Navigation Bar -->
   <nav>
     <ul>
       <li><a href="#">Home</a></li>
       <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
   </nav>
-
-  <!-- Main Content -->
   <main>
-    <!-- Content here -->
+    <section>
+      <h2>Section 1</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, accusantium, iusto. Obcaecati, exercitationem, possimus. Alias eaque, dignissimos, molestiae dolore quasi architecto reprehenderit magnam provident obcaecati ducimus fugit accusantium omnis.</p>
+    </section>
+    <section>
+      <h2>Section 2</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, accusantium, iusto. Obcaecati, exercitationem, possimus. Alias eaque, dignissimos, molestiae dolore quasi architecto reprehenderit magnam provident obcaecati ducimus fugit accusantium omnis.</p>
+    </section>
+    <section>
+      <h2>Section 3</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, accusantium, iusto. Obcaecati, exercitationem, possimus. Alias eaque, dignissimos, molestiae dolore quasi architecto reprehenderit magnam provident obcaecati ducimus fugit accusantium omnis.</p>
+    </section>
   </main>
-
-  <!-- Footer -->
   <footer>
-    <p>Copyright &copy; 2023 Website Name</p>
+    <p>Copyright &copy; 2023 My Website</p>
   </footer>
 </body>
-
 </html>
 ```
 
 ```css
-/* Global styles */
+/* Reset styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -48,49 +49,96 @@
 }
 
 /* Header */
+
 header {
-  background-color: #333;
+  background-color: #2f4f4f;
   color: #fff;
-  padding: 20px;
+  padding: 20px 0;
+}
+
+header h1 {
+  font-size: 30px;
   text-align: center;
 }
 
-/* Navigation Bar */
+/* Navigation bar */
+
 nav {
-  background-color: #666;
+  background-color: #3f5f5f;
   color: #fff;
-  padding: 20px;
-  text-align: center;
+  padding: 10px 0;
 }
 
 nav ul {
-  list-style-type: none;
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
 }
 
 nav li {
+  list-style-type: none;
   margin: 0 20px;
 }
 
 nav a {
-  color: #fff;
   text-decoration: none;
+  color: #fff;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  color: #000;
 }
 
-/* Main Content */
+/* Main content */
+
 main {
   padding: 20px;
 }
 
+main h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+main p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 /* Footer */
+
 footer {
-  background-color: #333;
+  background-color: #2f4f4f;
   color: #fff;
-  padding: 20px;
+  padding: 20px 0;
+}
+
+footer p {
   text-align: center;
+}
+
+/* Responsive styles */
+
+@media (max-width: 768px) {
+
+  header h1 {
+    font-size: 24px;
+  }
+
+  nav {
+    padding: 5px 0;
+  }
+
+  nav li {
+    margin: 0 10px;
+  }
+
+  main h2 {
+    font-size: 20px;
+  }
+
+  main p {
+    font-size: 14px;
+  }
+
 }
 ```
